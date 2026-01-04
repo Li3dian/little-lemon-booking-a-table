@@ -11,7 +11,6 @@ export default function CounterButton() {
     <div className="counter-container">
       <p>Huidige teller: **{count}**</p>
 
-      {/* Let op: JSX gebruikt onClick={handleClick} (zonder quotes) */}
       <button
         className="teller-knop"
         onClick={handleClick}

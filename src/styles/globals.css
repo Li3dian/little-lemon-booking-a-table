@@ -233,7 +233,7 @@ p {
 
 .specials-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
@@ -251,8 +251,6 @@ p {
   }
 }
 
-/* Little Lemon Global Styles & Booking Form */
-
 :root {
   --bgColour: #f2f2f2;
   --pGreen: #495e57;
@@ -268,7 +266,6 @@ p {
   --pMd: 18px;
 }
 
-/* Basis resets */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -281,7 +278,6 @@ body {
   color: var(--bP);
 }
 
-/* Booking Form Container */
 .booking-form {
   display: flex;
   flex-direction: column;
@@ -295,7 +291,6 @@ body {
   background-color: var(--highlight);
 }
 
-/* Labels */
 .booking-form label {
   display: flex;
   flex-direction: column;
@@ -306,7 +301,6 @@ body {
   font-weight: 500;
 }
 
-/* Inputs & Select boxen */
 .booking-form input,
 .booking-form select {
   background-color: #ffffff;
@@ -326,7 +320,6 @@ body {
   border: 2px solid var(--pGreen);
 }
 
-/* Custom Select Arrow */
 .booking-form select {
   appearance: none;
   -webkit-appearance: none;
@@ -380,40 +373,36 @@ body {
   margin-top: 2rem;
 }
 
-/* Sectie instellingen voor centrering */
 .confirmed {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 60vh; /* Zorgt dat de tekst mooi in het midden van het scherm staat */
+  min-height: 60vh;
   padding: 2rem;
   margin: 2rem auto;
   max-width: 600px;
-  background-color: var(--highlight); /* De lichte kleur uit je root */
+  background-color: var(--highlight);
   border-radius: 1rem;
   box-shadow: var(--mainShadow);
 }
 
-/* De hoofdtitel (Little Lemon Green) */
 .confirmed h1 {
   color: var(--pGreen);
-  font-family: var(--hFont); /* Markazi Text */
-  font-size: clamp(2rem, 5vw, 4rem); /* Maakt de tekst responsief */
+  font-family: var(--hFont);
+  font-size: clamp(2rem, 5vw, 4rem);
   margin-bottom: 1.5rem;
 }
 
-/* De bevestigingstekst (Karla font) */
 .confirmed p {
   color: var(--bP);
-  font-family: var(--pFont); /* Karla */
+  font-family: var(--pFont);
   font-size: 1.25rem;
   line-height: 1.6;
   max-width: 80%;
 }
 
-/* Optioneel: Een subtiel vinkje of icoon toevoegen met CSS */
 .confirmed::before {
   content: "✓";
   display: block;
@@ -428,7 +417,6 @@ body {
   box-shadow: var(--mainShadow);
 }
 
-/* Mobiele optimalisatie */
 @media screen and (max-width: 480px) {
   .confirmed {
     margin: 1rem;
@@ -440,7 +428,6 @@ body {
   }
 }
 
-/* --- SPECIALS SECTIE --- */
 .specials-selection {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -453,7 +440,7 @@ body {
 
 
 .specials-header {
-  grid-column: 3 / span 8; /* Begint op kolom 3, vult 8 kolommen (gecentreerd) */
+  grid-column: 3 / span 8;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -554,7 +541,6 @@ body {
   font-size: 18px;
   font-weight: 600;
 }
-/* --- RESPONSIVENESS --- */
 
 @media screen and (max-width: 1024px) {
   .specials-selection {
@@ -564,7 +550,7 @@ body {
     grid-column: 2 / span 10;
   }
   .specials-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 kaarten naast elkaar */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -578,17 +564,15 @@ body {
     gap: 1.5rem;
   }
   .specials-grid {
-    grid-template-columns: 1fr; /* 1 kaart per rij op mobiel */
+    grid-template-columns: 1fr;
   }
 }
 
-/* De container die de kaart op zijn plek houdt in het grid */
 .specials-list {
   display: flex;
   height: 100%;
 }
 
-/* De daadwerkelijke kaart */
 .product-info {
   background-color: var(--highlight);
   border-radius: 16px;
@@ -601,13 +585,11 @@ body {
   width: 100%;
 }
 
-/* Hover effect: kaart komt iets omhoog */
 .product-info:hover {
   transform: translateY(-8px);
   box-shadow: var(--hoverShadow);
 }
 
-/* De titel van het product */
 .product-info h3 {
   font-family: var(--hFont);
   font-size: 1.8rem;
@@ -615,37 +597,33 @@ body {
   margin: 0;
 }
 
-/* De beschrijvingstext */
 .product-info p {
   font-family: var(--pFont);
   font-size: 1rem;
   color: var(--bP);
   line-height: 1.6;
-  flex-grow: 1; /* Zorgt dat de knop altijd onderaan staat bij ongelijke teksten */
+  flex-grow: 1;
   margin-bottom: 1.5rem;
 }
 
-/* De knop binnen de kaart */
 .product-info .cta-btn {
-  align-self: flex-start; /* Knop wordt niet over de hele breedte uitgerekt */
+  align-self: flex-start;
   padding: 10px 20px;
   min-width: auto;
   font-size: 0.9rem;
 }
 
-/* --- SPECIALS SECTIE --- */
 .specials-selection {
   display: grid;
-  grid-template-columns: repeat(12, 1fr); /* 12-koloms grid */
+  grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 20px;
   padding-inline: 70px;
   padding-block: 80px;
   background-color: var(--white);
 }
 
-/* De bovenkant met de titel en de menu-knop */
 .specials-header {
-  grid-column: 3 / span 8; /* Begint bij kolom 3 en neemt 8 kolommen in beslag */
+  grid-column: 3 / span 8;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -658,7 +636,6 @@ body {
   color: var(--dark);
 }
 
-/* Het grid voor de 3 kaarten */
 .specials-grid {
   grid-column: 3 / span 8;
   display: grid;
@@ -709,10 +686,10 @@ body {
 
 .card-header {
   display: flex;
-  justify-content: space-between; /* Duwt de titel naar links en de prijs naar rechts */
-  align-items: center;            /* Zorgt dat ze verticaal mooi op één lijn staan */
-  gap: 10px;                      /* Voegt wat ruimte toe als de titel erg lang is */
-  margin-bottom: 0.5rem;          /* Ruimte onder de header */
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.5rem;
 }
 
 .product-card-header h3 {
@@ -733,7 +710,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 2rem;
-  flex-grow: 1; /* Duwt de 'Order' link naar de bodem */
+  flex-grow: 1;
 }
 
 .delivery-action {
@@ -743,7 +720,6 @@ body {
   gap: 10px;
 }
 
-/* --- RESPONSIVITEIT --- */
 @media screen and (max-width: 1024px) {
   .specials-selection { padding-inline: 2rem; }
   .specials-header, .specials-grid { grid-column: 2 / span 10; }
@@ -756,17 +732,16 @@ body {
   .specials-grid { grid-template-columns: 1fr; }
 }
 
-/* --- SPECIALS SECTIE --- */
 .specials-container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr); /* 12 kolommen grid */
+  grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 20px;
   padding: 80px 70px;
   background-color: var(--white);
 }
 
 .specials-header {
-  grid-column: 3 / span 8; /* Centreer header */
+  grid-column: 3 / span 8;
   display: flex;
   justify-content: space-between;
   align-items: center;

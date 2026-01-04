@@ -12,7 +12,7 @@ export default function Hero() {
         <h1>Little Lemon</h1>
         <h2>Amsterdam</h2>
       </div>
-      <p>Mediterrane keuken met een moderne twist, geserveerd in een gezellige, huiselijke sfeer in het hart van Amsterdam.</p>
+      <p>Mediterranean cuisine with a modern twist, served in a cozy, homely atmosphere in the heart of Amsterdam.</p>
       <a href="/reservations" className="cta-btn">Reserveer nu</a>
       </div>
 

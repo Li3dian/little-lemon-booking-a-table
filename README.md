@@ -1,21 +1,21 @@
 # Little Lemon — React (Vite) Starter
 
-Dit project is een Little Lemon website.
-Het bevat:
+This project is a Little Lemon website.
+It includes:
 
-- Homepagina (Hero + Specials)
-- Reserveringspagina met werkend formulier en dummy API
-- Bevestigingspagina
+- Home page (Hero + Specials)
+- Reservation page with a working form and dummy API
+- Confirmation page
 - Routing via react-router
-- Basis CSS bestanden (verdeeld per component)
-- Instructies om lokaal te starten
+- Basic CSS files (divided by component)
+- Instructions for starting locally
 
-## Installatie
+## Installation
 
 1. `npm install`
 2. `npm run dev`
 3. Open http://localhost:5173
 
-## Wat zit erin
+## Wat is included
 - `public/` - statische assets (logo)
 - `src/` - broncode (components, pages, styles, utils)
